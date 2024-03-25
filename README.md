@@ -22,7 +22,9 @@ You’ve been asked to dig into the customer data to see which menu items are do
 
 ## Data Source
 
-Restaurant Operations Data: The primary dataset used for this analysis is in files named “menu_items.csv” , “order_details.csv” and sql file named "create_restaurant_db.sql".The files contain information about the a quarter’s worth of orders, date and time of each order, the items ordered, and additional details on the type, name and price of the items.
+Restaurant Operations Data: The primary dataset used for this analysis is in files named “menu_items.csv” , “order_details.csv” and sql file named "create_restaurant_db.sql".These files contain information about the a quarter’s worth of orders, date and time of each order, the items ordered, and additional details on the type, name and price of the items.
+
+The output code is in files " restaurant1.sql", " restaurant2.sql" and "restaurant3.sql"
 
 ## Tools 
 
@@ -134,8 +136,6 @@ left join menu_items mi on od.item_id= mi.menu_item_id
 WHERE order_id IN (440,2075,1957,330,2675)
 group by order_id,category;
 ```
-
-
 
 
 
